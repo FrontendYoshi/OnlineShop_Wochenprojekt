@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnlineShop</title>
+    <style>
+        div {
+            padding: 2rem;
+        }
+
+        div#outer {
+            background-color: beige;
+        }
+
+        div#inner {
+            background-color: rgb(230, 85, 205);
+        }
+
+        .lavendel {
+            border: 2px solid rgb(223, 57, 200);
+        }
+
+        nav#menu {
+            background-color: rgb(230, 85, 205);
+            padding: 2rem;
+        }
+
+        nav.closed {
+            height: 0px;
+        }
+
+        nav.closed ul {
+            display: none;
+        }
+
+        body {
+            font-family: sans-serif;
+            background-color: blueviolet;
+            text-align: center;
+        }
+
+        # {
+            color: black;
+        }
+
+        h1 {
+            text-decoration-line: overline underline;
+            text-shadow: 2px 2px greenyellow;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li><a href="#">Infomaterial</a></li>
+            <li><a href="#">Klamotten</a></li>
+            <li><a href="#">Mitmachen</a></li>
+            <li><a href="#">Kontaktformular</a></li>
+        </ul>
+
+    </header>
+    <h1 id="headline">tender love</h1>
+    <div id="outer">
+        <div id="inner"></div>
+
+
+    </div>
+    <script>
+        const outer = document.getElementById("outer");
+        const inner = document.getElementById("inner");
+
+        outer.addEventListener("click", function (event) {
+            outer.classList.toggle("lavendel");
+            console.log("Capturing Phase");
+        }, true);
+
+        inner.addEventListener("click", function (event) {
+            console.log("Target Phase");
+        })
+    </script>
+</body>
+
+</html>

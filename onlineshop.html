@@ -41,33 +41,34 @@
             text-align: center;
         }
 
-        # {
-            color: black;
-        }
-
         h1 {
             text-decoration-line: overline underline;
             text-shadow: 2px 2px greenyellow;
+        }
+
+        ul.navigationsleiste {
+            list-style: none;
         }
     </style>
 </head>
 
 <body>
     <header>
-        <ul>
-            <li><a href="#">Infomaterial</a></li>
-            <li><a href="#">Klamotten</a></li>
-            <li><a href="#">Mitmachen</a></li>
-            <li><a href="#">Kontaktformular</a></li>
-        </ul>
 
     </header>
     <h1 id="headline">tender love</h1>
-    <div id="outer">
-        <div id="inner"></div>
-
-
-    </div>
+    <nav>
+        <div id="outer">
+            <div id="inner">
+                <ul class="navigationsleiste">
+                    <li><a href="#">Infomaterial</a></li>
+                    <li><a href="#">Klamotten</a></li>
+                    <li><a href="#">Mitmachen</a></li>
+                    <li><a href="#">Kontaktformular</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <script>
         const outer = document.getElementById("outer");
         const inner = document.getElementById("inner");

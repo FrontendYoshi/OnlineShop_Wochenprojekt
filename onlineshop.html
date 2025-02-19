@@ -48,12 +48,19 @@
             background-color: darkgray;
         }
 
+        .navigate ul ul ul ul li:hover {
+            display: block;
+        }
+
         h1 {
             color: white;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             font-size: 50px;
             text-align: center;
+            text-decoration-line: overline underline;
+            text-decoration-color: darkred;        
         }
+
         body {
             background-color: black;
         }
@@ -84,10 +91,24 @@
                         <li><a href="#">Flyer</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Kontakt</a>
+                <li><a href="#">Newsletter</a>
+                    <ul>
+                        <li><a href="name"></a>
+                            <form action="https://www.google.com/" method="post">
+                                <label for="name">Vor- und Nachname</label>
+                                <input id="name" name="name" maxlength="100">
+                                <label for="email">E-Mail</label>
+                                <input id="email" name="email" maxlength="100">
+                            
+                                <button type="submit" name="action" value="läuft">abbonieren</button>
+                            </form>
+                        </li>
+                    </ul>
                 </li>
+
             </ul>
         </nav>
+        <img src="/home/fullstack/Frontend_2025/OnlineShop_Wochenprojekt/doglovers.jpeg">
     </main>
 
     <footer>&copy Noah Neweling</footer>
